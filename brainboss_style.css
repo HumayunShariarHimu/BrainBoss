@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Homenaje");
+.p-canvas-webgl {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.p-summary {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  font-family: "Homenaje", sans-serif;
+  text-align: center;
+}
+.p-summary h1 {
+  margin: 0 0 0.1em;
+  font-size: 5vh;
+  font-weight: 40;
+}
+.p-summary p {
+  margin: 0;
+  font-size: 2vh;
+  letter-spacing: 0.1em;
+}
+.p-summary a {
+  color: #fff;
+}
+
+
+:root {
+  --text: hsl(0, 0%, 99%);
+  --textDim: hsl(0, 0%, 60%);
+  --background: hsl(0, 0%, 7%);
+  --primary: hsl(155, 100%, 65%);
+  --primaryBg: hsla(155, 100%, 65%, 1%);
+  --primaryHi: hsla(155, 100%, 75%, 25%);
+  --primaryFg: hsl(155, 100%, 85%);
+  --secondary: hsl(156, 51%, 14%);
+  --secondaryFg: hsl(156, 51%, 75%);
+  --secondaryBg: hsla(156, 51%, 14%, 5%);
+  --secondaryHi: hsla(156, 51%, 30%, 50%);
+  --accent: hsl(155, 100%, 94%);
+  --accentBg: hsla(155, 100%, 94%, 1%);
+  --accentHi: hsla(155, 100%, 100%, 25%);
+}
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  height: 80px;
+  width: 235px;
+  z-index: 9999;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+  border: none;
+  border-radius: 13px;
+  background-color: var(--primaryBg);
+  box-shadow: 0px -3px 15px 0px var(--primaryHi) inset;
+  color: var(--primaryFg);
+  font-family: "Manrope";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(0px);
+  transition: all 0.2s ease;
+}
+
+
+.button:hover > span {
+  opacity: 60%;
+}
+
+.button:hover > button {
+  transform: translateY(5px);
+}
+
+.button.first {
+  top: 12%;
+  right: 20%;
+}
+
+.button.sec {
+  bottom: 13%;
+  right: 11%;
+}
+
+.button.sec > button {
+  background-color: var(--accentBg);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+  color: var(--accentFg);
+}
+
+.button.sec > span {
+  background-color: var(--accentHi);
+}
+
+.button.third {
+  bottom: 25%;
+  left: 15%;
+}
+
+.button.third > button {
+  background-color: var(--secondaryBg);
+  box-shadow: 0px -3px 15px 0px var(--secondary) inset;
+  color: var(--secondaryFg);
+}
+
+.button.third > span {
+  background-color: var(--secondaryHi);
+}
+
+
