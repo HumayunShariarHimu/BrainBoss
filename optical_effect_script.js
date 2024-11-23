@@ -9,7 +9,7 @@ document.getElementById('scene-container').appendChild(renderer.domElement);
 const loader = new THREE.TextureLoader();
 
 
-const texture = loader.load('/BrainBoss.png');
+const texture = loader.load('https://raw.githubusercontent.com/HumayunShariarHimu/BrainBoss/refs/heads/main/BrainBoss.png');
 
 const material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, side: THREE.DoubleSide });
 const geometry = new THREE.PlaneGeometry(2, 2.4);
