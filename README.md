@@ -1,3 +1,2 @@
 # BrainBoss
-A Super Psychological AI System
-Hopefully Coming Soon....
+A Psychological System for Life Development
